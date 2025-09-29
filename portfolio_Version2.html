@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Brij Mohan – Product Management & Engineering Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root {
+      --accent: #2b74e4;
+      --bg: #f7f9fa;
+      --card: #fff;
+      --text: #222;
+      --muted: #666;
+      --border: #e4e7eb;
+    }
+    body {
+      font-family: 'Segoe UI', 'Arial', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: var(--card);
+      border-radius: 10px;
+      box-shadow: 0 4px 32px rgba(41, 68, 110, 0.07);
+      padding: 36px 28px;
+      border: 1px solid var(--border);
+    }
+    .header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 20px;
+      margin-bottom: 34px;
+    }
+    .header-text {
+      flex: 1;
+      min-width: 220px;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 2.3rem;
+      color: var(--accent);
+      letter-spacing: 1px;
+    }
+    .contact {
+      font-size: 1rem;
+      color: var(--muted);
+    }
+    .profile-img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 12px;
+      border: 2px solid var(--border);
+      margin-right: 18px;
+      background: var(--bg);
+      box-shadow: 0 2px 14px rgba(41, 68, 110, 0.07);
+    }
+    .about {
+      margin-bottom: 30px;
+      font-size: 1.1rem;
+    }
+    .section {
+      margin-bottom: 32px;
+    }
+    .section h2 {
+      color: var(--accent);
+      font-size: 1.3rem;
+      border-left: 5px solid var(--accent);
+      padding-left: 10px;
+      margin-bottom: 16px;
+    }
+    .skills-list, .certs-list, .lang-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 32px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+    .skills-list li, .certs-list li, .lang-list li {
+      background: var(--bg);
+      border-radius: 5px;
+      padding: 3px 10px;
+      border: 1px solid var(--border);
+    }
+    .timeline {
+      border-left: 3px solid var(--accent);
+      margin-left: 10px;
+      padding-left: 20px;
+      position: relative;
+    }
+    .job {
+      position: relative;
+      margin-bottom: 32px;
+      padding-left: 18px;
+    }
+    .job:before {
+      content: '';
+      position: absolute;
+      left: -27px;
+      top: 6px;
+      width: 12px;
+      height: 12px;
+      background: var(--accent);
+      border-radius: 50%;
+      border: 2px solid #fff;
+      box-shadow: 0 0 0 2px var(--accent);
+    }
+    .job-title {
+      font-weight: bold;
+      font-size: 1.09rem;
+      color: var(--accent);
+    }
+    .job-meta {
+      font-size: 1rem;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+    .job ul {
+      margin: 0 0 8px 0;
+      padding-left: 18px;
+    }
+    .product-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 22px;
+      margin-bottom: 20px;
+    }
+    .product-card {
+      flex: 1 1 250px;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 7px;
+      padding: 14px 18px;
+      min-width: 240px;
+      margin-bottom: 10px;
+    }
+    .product-card strong {
+      color: var(--accent);
+      font-size: 1.05em;
+    }
+    .edu-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .edu-list li {
+      margin-bottom: 8px;
+    }
+    @media (max-width: 690px) {
+      .container { padding: 18px 5px; }
+      .header { flex-direction: column; align-items: flex-start; gap: 9px; }
+      .profile-img { margin: 0 0 14px 0; }
+      .header-text { min-width: 0; }
+      .product-list { flex-direction: column; gap: 10px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="profile1.png" alt="Brij Mohan Professional Profile Image" class="profile-img">
+      <div class="header-text">
+        <h1>Brij Mohan</h1>
+        <div class="contact">
+          <div><a href="mailto:brij99mohan@gmail.com">brij99mohan@gmail.com</a></div>
+          <div>NCT, New Delhi, India</div>
+          <div><a href="https://linkedin.com/in/brijatnet/" target="_blank">LinkedIn</a></div>
+          <div>+91-7982385527</div>
+        </div>
+      </div>
+    </div>
+    <div class="about">
+      <strong>Seasoned Product Owner</strong> with 10+ years of experience developing B2B, B2C, and D2C SaaS products for Fortune 500 companies and startups.<br>
+      Proven leader in aligning engineering teams with product strategy and stakeholders to deliver market-leading solutions.<br>
+      Agile SDLC expert across digital, AI, retail, insurance, e-commerce, Ad-tech, and BFSI domains.
+    </div>
+
+    <div class="section">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>Product Management (Agile, Scrum, Waterfall)</li>
+        <li>GenAI (GPT-4.0), Prompt Engineering</li>
+        <li>Digital Transformation</li>
+        <li>RESTful API Microservices</li>
+        <li>Product Analytics (Google Analytics, MoEngage, Mixpanel, WebEngage)</li>
+        <li>Product Heatmaps, Gamification</li>
+        <li>User Journey Mapping</li>
+        <li>UI/UX Design Reviews</li>
+        <li>Product Roadmap & Strategy</li>
+        <li>Business Tech Analysis</li>
+        <li>React.js, Python, SQL, Asp.net</li>
+        <li>App Monitoring (Sentry, New Relic)</li>
+        <li>JIRA, Rally, Asana, Confluence, Figma, Mural, Dragonboat</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Delivered Products</h2>
+      <div class="product-list">
+        <div class="product-card">
+          <strong>DirecTV</strong><br>
+          Omni-channel Digital Sales DIY Solution for USA’s 3rd largest OTT platform (Spinny)<br>
+          <span style="color: var(--muted);">GenAI chatbot, improved onboarding/sales by 7%/4%, reduced delivery time by 1 week.</span>
+        </div>
+        <div class="product-card">
+          <strong>Spinny</strong><br>
+          Omni-channel SaaS for used car sales<br>
+          <span style="color: var(--muted);">Migrated 200+ microservices, improved engagement, predictive ML models.</span>
+        </div>
+        <div class="product-card">
+          <strong>GradRight</strong><br>
+          Ed-tech fintech platform<br>
+          <span style="color: var(--muted);">Digitized onboarding (+5%), improved DAU/MAU, reduced user drop by 12%.</span>
+        </div>
+        <div class="product-card">
+          <strong>Prism Compliance (Trantor)</strong><br>
+          B2B SaaS hybrid suite for US government compliance<br>
+          <span style="color: var(--muted);">Scaled client base >2x, delivered analytics dashboards, led workshops.</span>
+        </div>
+        <div class="product-card">
+          <strong>Birdeye</strong><br>
+          SaaS for business reputation<br>
+          <span style="color: var(--muted);">Led integrations (Zapier, Smartsheet), channel partner onboarding.</span>
+        </div>
+        <div class="product-card">
+          <strong>GlobalSign IDaaS (GMO)</strong><br>
+          IT Security & Identity SaaS<br>
+          <span style="color: var(--muted);">Process improvement, middleware integrations, technical product owner.</span>
+        </div>
+        <div class="product-card">
+          <strong>iVend Retail (CitiXsys)</strong><br>
+          Point of Sale SaaS<br>
+          <span style="color: var(--muted);">ERP/SAP integration, e-commerce, payments onboarding.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Professional Experience</h2>
+      <div class="timeline">
+
+        <div class="job">
+          <div class="job-title">Business Solutions Manager – Cognizant Technologies Solutions</div>
+          <div class="job-meta">Apr 2024 – Present</div>
+          <ul>
+            <li>Product Manager at USA's 5th-largest commercial bank, pioneering GenAI products with RAG.</li>
+            <li>Reduced UI/UX review time from 55–75 days to under 5 using AI.</li>
+            <li>Drove AI adoption; streamlined prototyping for hypothesis & POC phases.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-title">Product Manager (Demand, Core & Data Science) – GradRight Inc.</div>
+          <div class="job-meta">Nov 2023 – Mar 2024</div>
+          <ul>
+            <li>Technical Product Owner for Ed-tech fintech: D2C, B2B, B2C segments.</li>
+            <li>Digitized onboarding (+5%), improved DAU/MAU, boosted engagement via gamification and heatmaps.</li>
+            <li>Used data-driven insights to reduce user drop by 12%.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-title">Technical Product Manager – Spinny</div>
+          <div class="job-meta">Nov 2022 – Nov 2023</div>
+          <ul>
+            <li>Led omni-channel SaaS for used cars; managed demand, supply, payments, VAS.</li>
+            <li>Migrated 200+ microservices; led ML data model development.</li>
+            <li>Delivered RAB-based GenAI chatbot for digital sales, innovated onboarding & engagement.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-title">Technical Product Manager – Trantor Inc.</div>
+          <div class="job-meta">Dec 2017 – Nov 2022</div>
+          <ul>
+            <li>Managed B2B SaaS for US compliance; grew client base from 20 to 45.</li>
+            <li>Led analytics dashboard delivery, product workshops, partner onboarding.</li>
+            <li>Balanced roadmap across customer, business, and tech needs.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-title">Product Integration Engineer – Birdeye Inc.</div>
+          <div class="job-meta">Jun 2017 – Dec 2017</div>
+          <ul>
+            <li>SME for product integrations (Zapier, Smartsheet), partner onboarding.</li>
+            <li>Led cross-functional projects, backlog refinement, Scrum ceremonies.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-title">Product Integration Engineer – GMO Internet Group</div>
+          <div class="job-meta">Jan 2016 – May 2017</div>
+          <ul>
+            <li>Managed IT Security/IDaaS BAU operations, technical owner for NPIs, middleware integrations.</li>
+            <li>Drove agile R&D, documented processes, product demos.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-title">Product Engineer – CitiXsys (iVend Retail)</div>
+          <div class="job-meta">Aug 2015 – Jan 2016</div>
+          <ul>
+            <li>Managed POS app operations, ERP/SAP integration, e-commerce, payments onboarding.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-title">Operational Professional (Fixed Term) – IBM</div>
+          <div class="job-meta">Apr 2014 – Apr 2015</div>
+          <ul>
+            <li>Incident/change management, POS/ERP integration, improved operational efficiency.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Education</h2>
+      <ul class="edu-list">
+        <li>
+          <strong>B.Tech, Computer Science & Engineering</strong><br>
+          Amity University, 2008–2012 (GPA: 7.2)
+        </li>
+        <li>
+          <strong>Intermediate (12th), CBSE</strong><br>
+          Rawal International School, 2006–2008 (GPA: 7.1)
+        </li>
+        <li>
+          <strong>High School (10th), CBSE</strong><br>
+          Rawal International School, 2004–2006 (GPA: 7.4)
+        </li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Languages</h2>
+      <ul class="lang-list">
+        <li>English (Fluent)</li>
+        <li>Hindi (Native)</li>
+        <li>German (Basic)</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Certifications</h2>
+      <ul class="certs-list">
+        <li>SAFE 6 Certified POPM</li>
+        <li>CSPO</li>
+        <li>AWS AI Practitioner</li>
+        <li>Google Analytics</li>
+        <li>GPT-4.0</li>
+        <li>WES Certified</li>
+        <li>Design Thinking</li>
+      </ul>
+    </div>
+
+    <div class="about" style="margin-top:30px; color:#3a3a3a; border-top:1px solid #e6e6e6; padding-top:18px;">
+      <em>
+        “A proven leader at the intersection of product, technology, and business – delivering innovative solutions that drive business outcomes and customer delight.”
+      </em>
+    </div>
+  </div>
+</body>
+</html>
